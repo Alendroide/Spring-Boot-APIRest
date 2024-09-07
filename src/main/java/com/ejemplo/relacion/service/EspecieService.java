@@ -29,4 +29,8 @@ public class EspecieService {
 	public Especie saveEspecie(Especie especie) {
 		return especieRepository.save(especie);
 	}
+	
+	public void deleteEspecie(int id) {
+		especieRepository.deleteById(id);
+	}
 }

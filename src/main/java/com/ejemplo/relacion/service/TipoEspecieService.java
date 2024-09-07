@@ -25,4 +25,7 @@ public class TipoEspecieService {
 	public TipoEspecie saveTipoEspecie(TipoEspecie tiposEspecie) {
 		return tipoEspecieRepository.save(tiposEspecie);
 	}
+	public void deleteTipoEspecie(int id) {
+		tipoEspecieRepository.deleteById(id);
+	}
 }
