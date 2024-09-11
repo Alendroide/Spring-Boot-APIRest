@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ejemplo.relacion.entity.Especie;
 import com.ejemplo.relacion.service.EspecieService;
-@CrossOrigin(origins = "http://192.168.0.103:3000")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/especies")
 public class EspecieController {
